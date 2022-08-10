@@ -1,0 +1,1 @@
+java -jar target/testemkdata-1.0.1.jar
