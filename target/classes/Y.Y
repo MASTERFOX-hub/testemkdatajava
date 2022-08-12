@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (   
-  id INT NOT NULL AUTO_INCREMENT,
+  id int NOT NULL PRIMARY KEY,
   nome VARCHAR(30) NOT NULL,
   personalidade VARCHAR(1) NOT NULL,
   cpf VARCHAR(12) NOT NULL,
@@ -15,8 +15,7 @@ CREATE TABLE users (
   tel1 VARCHAR(9) NOT NULL,
   tel2 VARCHAR(9) NOT NULL,
   tel3 VARCHAR(9) NOT NULL,
-  data VARCHAR(10) NOT NULL,
-  PRIMARY KEY  (`id`)
+  data VARCHAR(10) NOT NULL
 );
 
 INSERT INTO users (id, nome, personalidade, cpf, rg, cnpj, ie, ativo, ddd1, ddd2, ddd3, tel1, tel2, tel3, data) VALUES
